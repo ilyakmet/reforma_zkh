@@ -11,7 +11,7 @@ import os.path
 
 #--------------------------------------
 #enter filename here, example: test_row.txt
-main_file_name = ''
+main_file_name = 'test_row.txt'
 #--------------------------------------
 
 DIR = os.path.abspath(os.curdir) + '/'
