@@ -24,8 +24,7 @@ def file_len(file):
 	return count
 
 def get_html_test(url, timeout):
-	response = urllib.request.urlopen(url, timeout=timeout)
-	response = response.read()
+	response = urllib.request.urlopen(url, timeout=timeout).read()
 	return response
 
 def test_connection():
@@ -48,8 +47,7 @@ def test_connection():
 
 def get_html(url, timeout):
 	try:
-		response = urllib.request.urlopen(url, timeout=timeout)
-		response = response.read()
+		response = urllib.request.urlopen(url, timeout=timeout).read()
 	except:
 		response = '0'
 	return response
